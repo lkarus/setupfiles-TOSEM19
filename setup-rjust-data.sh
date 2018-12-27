@@ -6,6 +6,13 @@ die() {
   exit 1
 }
 
+chmod +x init.sh
+chmod +x create_mml.pl
+chmod +x run-mutation-testing1.sh
+chmod +x run-mutation-testing2.sh
+chmod +x run-mutation-testing3.sh
+chmod +x run-mutation-testing4.sh
+
 git clone https://bitbucket.org/rjust/fault-localization-data.git
 cd fault-localization-data
 
