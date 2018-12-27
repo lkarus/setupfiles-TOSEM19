@@ -12,12 +12,13 @@ chmod +x run-mutation-testing1.sh
 chmod +x run-mutation-testing2.sh
 chmod +x run-mutation-testing3.sh
 chmod +x run-mutation-testing4.sh
+chmod +x setup.sh
 
 git clone https://bitbucket.org/rjust/fault-localization-data.git
 cd fault-localization-data
 
-cp ../init.sh defects4j/init.sh
-./setup.sh
+cp ../setup.sh setup.sh || die "there is an error copying setup file for fault-localization data"
+./setup.sh || die "there is an error in fault-localization-data setup"
 
 # copy other files to their locations
 cp ../template.mml defects4j/major/mml/template.mml
