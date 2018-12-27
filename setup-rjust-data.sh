@@ -24,5 +24,5 @@ cp ../setup.sh setup.sh || die "there is an error copying setup file for fault-l
 cp ../template.mml defects4j/major/mml/template.mml
 cp ../create_mml.pl defects4j/framework/util/create_mml.pl
 
-echo 'export PATH="$PATH:/local_home/duyloc1503/tosem/fault-localization-data/killmap/scripts/"' >> ~/.bashrc
+echo 'export PATH="$PATH:/local_home/duyloc1503/tosem19/fault-localization-data/killmap/scripts/"' >> ~/.bashrc
 
