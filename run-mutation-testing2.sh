@@ -12,7 +12,7 @@ if [ "$#" -ne 2 ]; then
 fi
 
 # create project folder if not yet existed
-if [ ! -f "$1" ]; then
+if [ ! -d "$1" ]; then
   mkdir $1 || die "fail to make folder $1"
 fi
 cd $1
